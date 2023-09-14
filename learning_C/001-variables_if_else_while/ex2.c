@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	int givenNumber = 1234;
+	int givenNumber = 290787;
 	int lastDigit = givenNumber % 10;
 
 	printf("The last digit of %d is %d\n", givenNumber, lastDigit);
