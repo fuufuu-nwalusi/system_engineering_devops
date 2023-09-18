@@ -11,7 +11,7 @@ int main(void)
 	printf("Size of type 'char' on my computer: %lu bytes\n", sizeof(char));
 	printf("Size of 'int' here is %lu byte(s)\n", sizeof(int));
 	printf("This is the size of 'float' on my system - %lu byte(s)\n", sizeof(float));
-	printf("Size of my variable 'n' is %lu bytes", sizeof(n));
+	printf("Size of my variable 'n' is %lu bytes\n", sizeof(n));
 
 	return 0;
 }
