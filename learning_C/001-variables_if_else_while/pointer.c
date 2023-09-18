@@ -7,7 +7,12 @@
  */
 int main(void)
 {
-	char *p;
-	printf("Size of pointer p is %lu\n", sizeof(p));
+	int *age;
+	char *ptr;
+	//char *p;
+	//printf("Size of pointer p is %lu\n", sizeof(p));
+	
+	printf("Address of pointer age is %p\n", &age);
+
 	return 0;
 }
