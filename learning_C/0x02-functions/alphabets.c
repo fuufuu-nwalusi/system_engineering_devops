@@ -4,8 +4,12 @@
 
 int main(void)
 {
-	printf("Alphabets in lower case:\n");
-
+	char a;
+	for(a = 'a'; a <= 'z'; a++)
+	{
+		printf("Alphabets in lower case:\n");
+		printf("%c ", a);
+	}
 //	printAlphabet();
 
 	return 0;
