@@ -6,13 +6,41 @@
  * return: Always 0 on success
  */
 
-void checkPrimeNumber();
+int checkPrimeNumber();
 
-void checkPrimeNumber()
+int checkPrimeNumber(int num)
 {
-	int n, i, flag = 0;
+	int i;
 
-	printf("Enter a positive integer: ");
-	scanf("%d", &n);
+	if (num <= 1)
+	{
+		return 0;
+	}
+	
+	for(i = 2; i * i <= num; i++)
+	{
+		if (num % i == 0)
+		{
+			return 0;
+		}
+	}
+	return 1;
+}
 
+int main()
+{
+	int num;
+
+	printf("Enter an integer: ");
+	scanf("%d", &num);
+
+	if (checkPrimeNumber(num))
+	{
+		printf("%d is a prime number.\n", num);
+	}
+	else
+	{
+		printf("%d is not a prime number.\n", num);
+	}
+	return 0;
 }
