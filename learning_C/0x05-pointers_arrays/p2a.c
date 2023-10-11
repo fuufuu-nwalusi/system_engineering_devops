@@ -31,5 +31,11 @@ int main()
 	void *ptr_vn = NULL;
 
 	//printing sizes
+	printf("Size of Integer Pointer:\t %lu bytes\n", sizeof(ptr_int));
+	printf("Size of Character Pointer:\t %lu bytes\n", sizeof(ptr_char));
+	printf("Size of Structure Pointer:\t %lu bytes\n", sizeof(ptr_str));
+	printf("Size of Function Pointer:\t %lu bytes\n", sizeof(ptr_func));
+	printf("Size of NULL Void Pointer:\t %lu bytes\n", sizeof(ptr_vn));
 	
+	return 0;
 }
